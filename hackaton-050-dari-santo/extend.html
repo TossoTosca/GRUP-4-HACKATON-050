@@ -22,13 +22,13 @@
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Log out</a>
+                      <a class="nav-link" href="login.html">Log out</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">EXTEND PREMIUM!</a>
+                        <a class="nav-link" href="extend.html">EXTEND PREMIUM!</a>
                       </li>
                     <!-- <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -58,35 +58,90 @@
 <!-- disini bikin card yg bertujuan kayak shoping cart -->
 <div class="row">
     <div class="col">
-        <div class="card" style="width:500px">
+      <!-- ini button 1 -->
+        <div class="card" style="width:500px" >
             <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png
             " alt="Card image">
             <div class="card-img-overlay">
               <h4 class="card-title">John Doe</h4>
               <p class="card-text">Some example text.</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#iniModal1">harian</a>
             </div>
           </div>
+          <!-- ini button 2 -->
           <div class="card" style="width:500px">
             <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png
             " alt="Card image">
             <div class="card-img-overlay">
               <h4 class="card-title">John Doe</h4>
               <p class="card-text">Some example text.</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2Ini">Bulanan</a>
             </div>
           </div>
-          <div class="card" style="width:500px">
+          <!-- ini button 3 -->
+          <div class="card" style="width:500px";>
             <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png
             " alt="Card image">
             <div class="card-img-overlay">
               <h4 class="card-title">John Doe</h4>
               <p class="card-text">Some example text.</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal3Dimari">Tahunan</a>
             </div>
           </div>
-
-
+          <!-- ini button 1 -->
+          <div class="modal fade" id="iniModal1" tabindex="-1" aria-labelledby="iniModal1Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="iniModal1Label">Paket Harian</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1>Monggo di beli Paket harian ini</h1>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Gak Jadi</button>
+                  <button type="button" class="btn btn-primary">Beli</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ini button 2 -->
+          <div class="modal fade" id="modal2Ini" tabindex="-1" aria-labelledby="modal2IniLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal2IniLabel">Bulanan</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1>Monggo di beli Paket Bulanan ini</h1>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Gak Jadi</button>
+                  <button type="button" class="btn btn-primary">Beli</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ini button 3 -->
+          <div class="modal fade" id="Modal3Dimari" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
 </div>
 
