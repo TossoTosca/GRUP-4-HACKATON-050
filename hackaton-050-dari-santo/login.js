@@ -1,3 +1,4 @@
+//Data
 const users = [
     {
     name: 'santo',
@@ -41,6 +42,6 @@ loginForm.addEventListener('submit', (e) => {
       }
     }
   
-    if (passed) window.location.href = 'https://www.wikipedia.org/';
+    if (passed) window.location.href = 'index.html';
     if (!passed) alert('Invalid username or password');
   });
