@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  background-image:url(https://cdn.discordapp.com/attachments/989064861944258698/1009748149532889111/1192.jpg);
+  background-image:url(https://cdn.discordapp.com/attachments/989064861944258698/1009720816906281002/1192.jpg);
 }
 
 body {
@@ -13,13 +13,15 @@ body {
 }
 
 .form-signin {
-  max-width: 350px;
+  max-width: 500px;
   padding: 15px;
   font-family: Arial;
 }
 
 .form-signin .form-floating:focus-within {
   z-index: 2;
+  margin-top: 15px;
+  margin-bottom: 80px;
 }
 
 .form-signin input[type="email"] {
@@ -44,4 +46,10 @@ body {
   font-family: Arial;
   font-weight: 900;
   font-style: italic;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.color {
+  color : white;
 }
