@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="extend.js" async></script>
   </head>
-  <body>
+  <body style="background-color: DarkRed;">
     <div class="nav">
         <nav class="navbar bg-light fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">NETPLEK</a>
+              <a class="navbar-brand" href="index.html">NETPLEK</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -56,92 +57,79 @@
     </div>
     <div>
 <!-- disini bikin card yg bertujuan kayak shoping cart -->
-<div class="row">
-    <div class="col">
-      <!-- ini button 1 -->
-        <div class="card" style="width:500px" >
-            <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png
-            " alt="Card image">
-            <div class="card-img-overlay">
-              <h4 class="card-title">John Doe</h4>
-              <p class="card-text">Some example text.</p>
-              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#iniModal1">harian</a>
+      <section class="container content-section">
+        <h2 class="section-header">PRODUCT</h2>
+  
+        <!-- div classawal -->
+        <div class="shop-items">
+          <!-- ini harusnya rata ke samping subscription 1 -->
+          <div class="shop-item">
+            <span class="shop-item-title" style="display: none">harian</span>
+            <img class="shop-item-image" src="Hari.jpg" style="height: 450px;"/>
+            <div class="shop-item-details">
+              <span class="shop-item-price"style="display: none">Rp5000</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                SAYA SUKA INI!
+              </button>
             </div>
           </div>
-          <!-- ini button 2 -->
-          <div class="card" style="width:500px">
-            <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png
-            " alt="Card image">
-            <div class="card-img-overlay">
-              <h4 class="card-title">John Doe</h4>
-              <p class="card-text">Some example text.</p>
-              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2Ini">Bulanan</a>
+  
+          <!-- ini harusnya rata ke samping subscription 2 -->
+          <div class="shop-item">
+            <span class="shop-item-title" style="display: none">bulanan</span>
+            <img class="shop-item-image" src="bulan.jpg" style="height: 450px;"/>
+            <div class="shop-item-details">
+              <span class="shop-item-price"style="display: none">Rp50000</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                SAYA SUKA INI!
+              </button>
             </div>
           </div>
-          <!-- ini button 3 -->
-          <div class="card" style="width:500px";>
-            <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png
-            " alt="Card image">
-            <div class="card-img-overlay">
-              <h4 class="card-title">John Doe</h4>
-              <p class="card-text">Some example text.</p>
-              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal3Dimari">Tahunan</a>
+  
+          <!-- ini harusnya rata ke samping subscription 3 -->
+          <div class="shop-item">
+            <span class="shop-item-title" style="display: none">tahunan Diare</span>
+            <img class="shop-item-image" src="tahun.jpg" style="height: 450px;"/>
+            <div class="shop-item-details">
+              <span class="shop-item-price" style="display: none">Rp600000</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                SAYA SUKA INI!
+              </button>
             </div>
           </div>
-          <!-- ini button 1 -->
-          <div class="modal fade" id="iniModal1" tabindex="-1" aria-labelledby="iniModal1Label" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="iniModal1Label">Paket Harian</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <h1>Monggo di beli Paket harian ini</h1>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Gak Jadi</button>
-                  <button type="button" class="btn btn-primary">Beli</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ini button 2 -->
-          <div class="modal fade" id="modal2Ini" tabindex="-1" aria-labelledby="modal2IniLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="modal2IniLabel">Bulanan</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <h1>Monggo di beli Paket Bulanan ini</h1>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Gak Jadi</button>
-                  <button type="button" class="btn btn-primary">Beli</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ini button 3 -->
-          <div class="modal fade" id="Modal3Dimari" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
+      </section>
+
+    
+      <!-- section cart ini harus di masukin dalem row baru supaya rapih . atau biar keren di jadiin modal -->
+    <section class="container content-section" style="text-align: center;">
+      <h2 class="section-header" style="color: white;">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column" style="color: white;">ITEM</span>
+        <span class="cart-price cart-header cart-column" style="color: white;">PRICE</span>
+        <span class="cart-quantity cart-header cart-column" style="color: white;">QUANTITY</span>
+      </div>
+
+      <!-- jangan diapa apain dibawah ini -->
+
+      <!-- div item cart -->
+      <div class="cart-items">
+        <!-- div item 1 -->
+
+        <!-- div item 2 -->
+      </div>
+
+      <!-- div cart total -->
+      <div class="cart-total">
+        <strong class="cart-total-title" style="color: white;">Total</strong>
+        <span class="cart-total-price" style="color: white;">Rp0</span>
+      </div>
+
+      <!-- button purchase -->
+      <button class="btn btn-primary btn-purchase" type="button">
+        PURCHASE
+      </button>
+    </section>
     </div>
 </div>
 
