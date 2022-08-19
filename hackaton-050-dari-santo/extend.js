@@ -61,6 +61,7 @@ function addItemToCart(title, price, imageSrc){
     for(let i = 0; i < cartItemNames.length; i++){
         if(cartItemNames[i].innerText == title){
             alert('Yakin nambah??')
+            alert('klik dibawah ya!')
             return
         }
     }
